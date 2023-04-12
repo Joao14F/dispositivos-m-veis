@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média entre notas</title>
+</head>
+<body>
+    <script>
+        let nota1= Number(prompt("informe a primeira nota: "));
+        let nota2= Number(prompt("informe a segunda nota: "));
+        let nota3= Number(prompt("informe a terceira nota: "));
+        media=(nota1+nota2+nota3)/3
+        document.write(`Sua média é ${media}`)
+
+        if(media >= 5 && media < 7){
+           alert("Recuperação");
+        }
+        else if(media >= 7){
+            alert("Aprovado");
+        }
+        else {
+            alert("Reprovado");
+        }
+    </script>
+</body>
+</html>

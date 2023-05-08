@@ -18,12 +18,15 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">
         interagindo...
     </div>
     <script>
         function clicar(){
             document.getElementById("area").textContent = "Clicou"
+        }
+        function entrar(){
+            document.getElementById("area").textContent = "Entrou"
         }
     </script>
 </body>

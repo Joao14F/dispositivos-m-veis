@@ -8,25 +8,35 @@
     <style>
         div#area{
             font: normal 22pt arial;
-            background: rgb(red, green, blue);
+            background: rgb(199, 189, 203);
             color: black;
             width: 200px;
             height: 200px;
             line-height: 200px;
             text-align: center;
+            
         }
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmousedown="pressionado">
         interagindo...
     </div>
     <script>
         function clicar(){
             document.getElementById("area").textContent = "Clicou"
+            document.getElementById("area").style.textAlign="left"
         }
         function entrar(){
             document.getElementById("area").textContent = "Entrou"
+            document.getElementById("area").style.background="red"
+        }
+        function sair(){
+            document.getElementById("area").textContent = "Saiu"
+            document.getElementById("area").style.color="blue"
+        }
+        function pressionado(){
+            document.getElementById("area").textContent = "Pressionado"
         }
     </script>
 </body>

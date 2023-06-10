@@ -1,5 +1,14 @@
 {
   "dependencies": {
+    "@expo/cli": "^0.0.0",
+    "@expo/config": "^3.3.22",
+    "@expo/config-plugins": "^6.0.2",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "babel-preset-expo": "^9.3.2",
+    "expo-asset": "^8.6.0",
+    "expo-constants": "^10.1.1",
+    "find-babel-config": "^2.0.0",
+    "json5": "^2.2.3",
     "uuid": "^9.0.0"
   }
 }
